@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Add New User</title>
+</head>
+<body class="bg-zinc-900 text-white p-10">
+  <div class="max-w-xl mx-auto">
+    <a class="bg-blue-500 text-white text-sm px-3 py-1 rounded hover:bg-blue-600" href="/">Home</a>
+    <h1 class="text-4xl font-bold mt-4 mb-6">Add New User</h1>
+
+    <form action="/create" method="POST" class="space-y-6 bg-zinc-800 p-6 rounded shadow-md">
+      <div>
+        <label class="block text-sm mb-1" for="name">Name</label>
+        <input class="w-full p-2 rounded bg-zinc-700 text-white" type="text" name="name" required>
+      </div>
+      <div>
+        <label class="block text-sm mb-1" for="email">Email</label>
+        <input class="w-full p-2 rounded bg-zinc-700 text-white" type="email" name="email" required>
+      </div>
+      <div>
+        <label class="block text-sm mb-1" for="image">Image URL</label>
+        <input class="w-full p-2 rounded bg-zinc-700 text-white" type="text" name="image" required>
+      </div>
+      <button class="bg-green-600 px-4 py-2 rounded hover:bg-green-700" type="submit">Add User</button>
+    </form>
+  </div>
+</body>
+</html>

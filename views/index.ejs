@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Welcome</title>
+</head>
+<body class="bg-zinc-900 text-white">
+  <div class="min-h-screen flex flex-col items-center justify-center p-10">
+    <!-- Hero Section -->
+    <h1 class="text-5xl font-bold tracking-tight mb-4 text-blue-400">User Dashboard</h1>
+    <p class="text-lg text-zinc-300 mb-8 max-w-xl text-center">
+      Easily manage, view, sort, and update users in one simple dashboard.
+    </p>
+
+    <!-- Call to Actions -->
+    <div class="flex gap-4">
+      <a href="/read" class="bg-blue-600 px-6 py-2 rounded hover:bg-blue-700 transition">View All Users</a>
+      <a href="/add" class="bg-green-600 px-6 py-2 rounded hover:bg-green-700 transition">Add New User</a>
+    </div>
+
+    <!-- Features -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16">
+      <div class="bg-zinc-800 p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl mb-2">🔍 Sort Users</h3>
+        <p class="text-zinc-400 text-sm">Sort by name or email quickly with one click.</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl mb-2">🖊️ Edit Profiles</h3>
+        <p class="text-zinc-400 text-sm">Update user details on the go.</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl mb-2">🗑️ Easy Deletion</h3>
+        <p class="text-zinc-400 text-sm">Remove outdated users with confirmation.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-zinc-500 text-sm">
+      Made with ❤️ by Dev · <a class="underline hover:text-white" href="https://github.com/">GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
